@@ -1,0 +1,41 @@
+body {
+  background: #ffe6f0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.center {
+  margin-top: 100px;
+}
+
+button {
+  padding: 15px 30px;
+  margin: 10px;
+  background: pink;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 8px;
+}
+
+button:hover {
+  background: hotpink;
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+.box {
+  display: inline-block;
+  margin: 20px;
+  padding: 30px;
+  background: #ffb6c1;
+  cursor: pointer;
+  border-radius: 10px;
+}
+img {
+  max-width: 300px;   /* limits image size */
+  height: auto;       /* keeps proportions */
+}
