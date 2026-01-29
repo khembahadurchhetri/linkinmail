@@ -3,7 +3,7 @@ function openGift(box) {
   const surprises = [
     { img: "images/teddy.png", text: "You got a Teddy 🧸!" },
     { img: "images/chocolate.png", text: "You got Chocolate 🍫!" },
-    { img: "images/bouquet.png", text: "You got a Bucket of gifts 🎁!" },
+    { img: "images/bouquet.png", text: "You got a Bouquet 🎁!" },
     { img: "images/balloons.png", text: "You got Balloons 🎈!" },
     { img: "images/gift kit.png", text: "You got a Surprise Kit 🎉!" }
   ];
@@ -35,3 +35,4 @@ function noValentine() {
   // reload same question page
   location.href = 'valentine.html';
 }
+
