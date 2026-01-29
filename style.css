@@ -1,13 +1,27 @@
+/* ================================
+   Romantic Surprise Website Styles
+   ================================ */
+
+/* General page styling */
 body {
-  background: #ffe6f0;
+  background: #ffe6f0;          /* soft romantic pink */
   font-family: Arial, sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Center container */
+.center {
+  margin-top: 50px;
   text-align: center;
 }
 
-.center {
-  margin-top: 100px;
-}
-
+/* Buttons */
 button {
   padding: 15px 30px;
   margin: 10px;
@@ -16,6 +30,7 @@ button {
   cursor: pointer;
   font-size: 18px;
   border-radius: 8px;
+  transition: 0.3s;
 }
 
 button:hover {
@@ -23,10 +38,12 @@ button:hover {
   color: white;
 }
 
+/* Hidden elements */
 .hidden {
   display: none;
 }
 
+/* Gift boxes */
 .box {
   display: inline-block;
   margin: 20px;
@@ -34,8 +51,83 @@ button:hover {
   background: #ffb6c1;
   cursor: pointer;
   border-radius: 10px;
+  font-size: 18px;
+  transition: 0.3s;
 }
-img {
-  max-width: 300px;   /* limits image size */
-  height: auto;       /* keeps proportions */
+
+.box:hover {
+  background: hotpink;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Gift box surprise content */
+.box img {
+  max-width: 150px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.box span {
+  display: block;
+  font-weight: bold;
+  color: #d6336c;
+  margin-top: 5px;
+}
+
+/* Gift message image (if used separately) */
+#giftMessage img {
+  margin-top: 20px;
+  max-width: 150px;   /* limits image size */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Bucket image styling */
+.bucket {
+  max-width: 150px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* Valentine page images */
+.valentine {
+  max-width: 150px;   /* smaller rose image */
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* Yes page container */
+#yesPage {
+  margin-top: 30px;
+  display: flex;          /* put images side by side */
+  justify-content: center;
+  flex-wrap: wrap;        /* wrap neatly on smaller screens */
+  gap: 15px;              /* spacing between images */
+}
+
+/* Yes page heading */
+#yesPage h1 {
+  color: hotpink;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+/* Yes page images (balloons, hearts, bed) */
+#yesPage img {
+  max-width: 180px;   /* shrink balloons/hearts/bed */
+  height: auto;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Floating animation for romantic vibe */
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0); }
 }
